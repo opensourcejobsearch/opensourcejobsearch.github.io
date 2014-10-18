@@ -22,30 +22,45 @@
 <div class="row">
 <div class="col-md-12">
 <!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning btn-lg btn-block">Search Criteria</button>
+<button type="button" class="btn btn-warning btn-lg btn-block">Back to Home</button>
 </div>
 </div>
 </div>
 <h1 class="text-center">
 List of Jobs
 </h1>
-<!-- Table with alternating cell background color and outer frame -->
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<td>
-<p class="lead text-justify">
-<a href="job2.html">Node.js developer</a> (Multi-million dollar start-up) - Immediate start</p>
-</td>
-</tr>
-<tr>
-<td>
-<p class="lead text-justify">
-Test Job 2</p>
-</td>
-</tr>
-</tbody>
-</table>
+
+<form class="well form-search">
+
+<div class="form-group">
+<label for="keywords">Keywords</label>
+<input type="text" class="input-medium search-query" id="keywords">
+</div>
+
+<div class="form-group">
+<label for="city">City</label>
+<select class="form-control" id="city">
+  <option>Sydney</option>
+  <option>Melbourne</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="function">Job Function</label>
+<select class="form-control" id="function">
+  <option>Accounting</option>
+  <option>Banking</option>
+  <option>Education</option>
+  <option>Engineering</option>
+  <option>Healthcare</option>
+  <option>IT</option>
+  <option>Sales</option>
+</select>
+</div>
+
+<button type="submit" class="btn btn-primary">Search</button>
+</form>
+
 </div>
 <!-- JavaScript placed at the end of the document so the pages load faster -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
